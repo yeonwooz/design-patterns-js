@@ -1,4 +1,15 @@
-export { default as NewOperator } from "./newOperator.js";
+export { Spidey } from "./newOperator.js";
+export { IronMan } from "./ObjectLiteral.js";
+
+
+console.log(Spidey)
+console.log(Spidey.skills)
+
+
+console.log(Ironman)
+console.log(Ironman.skills)
+console.log(Ironman.gender)
+
 
 /*
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer

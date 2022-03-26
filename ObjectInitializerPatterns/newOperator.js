@@ -1,9 +1,22 @@
-class NewOperator {
-  constructor() {
-    this.test = 1
+class Hero {
+  constructor(_name) {
+    this.name = _name
+  }
+
+  get _name() {
+    return this.name
+  }
+
+  set _name(_name) {
+    this.name = _name
   }
 }
 
-const obj = new NewOperator()
+const Spidey = new Hero('spiderman')
 
-export default obj
+Object.defineProperty(Spidey, 'skills', {
+  value: ['Web-Swing', 'Web-Smash'],
+  writable: true
+})
+
+export { Spidey }
