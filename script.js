@@ -1,3 +1,4 @@
-// import {test} from './creationalPattern.js'
+import {NewOperator} from './ObjectInitializerPatterns/index.js'
 
-// test()
+
+console.log(NewOperator.test)
