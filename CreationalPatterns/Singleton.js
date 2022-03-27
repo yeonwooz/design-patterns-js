@@ -57,7 +57,7 @@ const encapsulatedMjolnir = (function() {
 
 const first = encapsulatedMjolnir.getInstance()
 const second = encapsulatedMjolnir.getInstance()
-console.log(first === second); 
+//console.log(first === second); 
 
 
 export { encapsulatedMjolnir}
