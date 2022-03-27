@@ -17,27 +17,25 @@ const defineProp = (targetObj, newProp, configs) => {
 
 // Prototype
 const PropProto = (function(){
-  function ProtoProps(targetObj, newProp){
+  function ProtoProps(targetObj, newProp, configs){
     this.targetObj = targetObj
-    this.setConfig = function(newProp, configs) {
-      this.targetObj[newProp] = configs
-    }
+    this.newProp = newProp
+    this.configs = configs
   }
 
-  ProtoProps.prototype.configs = function(extra) {
-    return {
+  ProtoProps.prototype.defineProp = function() {
+    this.targetObj[this.newProp] = {
       writable: true,
       enumerable: true,
       configurable: true,
-      ...extra
+      ...this.configs
     }
+
+    return this.targetObj
   }
 
   return function (targetObj, newProp, configs) {
-    let instance = new ProtoProps(targetObj, newProp)
-    const newConfig = instance.configs(configs)
-    instance.setConfig(newProp, newConfig)
-    return instance
+    return new ProtoProps(targetObj, newProp, configs).defineProp()
   }
 })()
 

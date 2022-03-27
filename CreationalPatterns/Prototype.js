@@ -1,14 +1,16 @@
 // The concept is to copy an existing object rather than creating a new instance from scratch
 
 const Convert = (function(){
-  function StringProto(){}
-
-  StringProto.prototype.toString = function(targetObj) {
-    return JSON.stringify(targetObj)
+  function StringProto(obj){
+    this.targetObj = obj
   }
 
-  return function () {
-    return new StringProto()
+  StringProto.prototype.toString = function() {
+    return JSON.stringify(this.targetObj)
+  }
+
+  return function (obj) {
+    return new StringProto(obj)
   }
 })()
 
