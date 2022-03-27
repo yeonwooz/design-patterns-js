@@ -11,6 +11,8 @@ Object.defineProperty(IronMan, 'skills', {
 
 PropertySetting.defineProp(IronMan, 'gender', {value: 'male'})
 
+PropertySetting.PropProto(IronMan, 'realName', {value: 'Tony Stark'})
+
 IronMan.Suits = new PropertySetting.PropsClass({
   value:['Mark I, Mark II, Mark III']
 })
