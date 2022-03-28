@@ -18,5 +18,6 @@ Human.prototype.describe = function(){
 //the constructor uses the arguments passed into it to
 //initialize the property values name, age and sex
 var person = new Human("Elle", "23", "Engineer");
+
 //calling the describe method for the person object
 person.describe();

@@ -1,4 +1,4 @@
-import PropertySetting from "../utils/propertySetting.js"
+import PropertySetting from "../../utils/propertySetting.js"
 
 const IronMan = {
   name: 'IronMan'
