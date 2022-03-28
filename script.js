@@ -5,6 +5,7 @@ import { Spidey } from './CreationalPatterns/ObjectInitializerPatterns/index.js'
 import { IronMan } from './CreationalPatterns/ObjectInitializerPatterns/index.js'
 import { Car } from './CreationalPatterns/ObjectInitializerPatterns/index.js'
 import { IronManSuit } from './CreationalPatterns/Prototype.js'
+import { cats } from './StructuralPatterns/Proxy.js'
 
 /*
 console.log(Spidey)
