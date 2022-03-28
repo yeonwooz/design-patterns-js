@@ -1,7 +1,9 @@
 /*
 The concept is to copy an existing object rather than creating a new instance from scratch.
 
-원본객체의 prototype 에 메소드를 정의하고 공유해서 사용함으로써 메모리효율을 높인다 
+원본객체의 prototype 에 메소드를 정의하고 공유해서 사용함으로써 메모리효율을 높인다.
+클래스 기반 언어에서는 clone메소드로 공통메서드를 정의해주어야 하지만, 
+프로토타입 기반 언어에서는 clone메소드를 만들지 않고 prototype 객체를 활용할 수 있다.
 */
 
 const IronManSuit = function(name) {
