@@ -1,5 +1,5 @@
 export { encapsulatedMjolnir } from './Singleton.js'
-
+export { IronManSuit } from './Prototype.js'
 /*
 Creational Patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
 
