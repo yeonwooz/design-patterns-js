@@ -1,5 +1,6 @@
 export { Spidey } from "./newOperator.js";
 export { IronMan } from "./ObjectLiteral.js";
+export { Car } from "./ConstructorPattern.js";
 
 /*
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer
